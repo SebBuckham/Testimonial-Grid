@@ -8,46 +8,86 @@ body {
   background-color: rgb(236, 242, 248);
 }
 
+.image img {
+  border-radius: 50px;
+  border-color: white 3px solid;
+}
+
 .grid-container {
-  padding: 2%;
+  padding: 5% 3%;
+}
+
+.grid-items {
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 #grid-item-1 {
   background-color: rgb(117, 65, 200);
   color: white;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  border-radius: 15px;
 }
 
 #grid-item-2 {
   background-color: rgb(72, 85, 106);
+
   color: white;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
 }
 
 #grid-item-3 {
   background-color: rgb(255, 255, 255);
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  color: black;
 }
 
 #grid-item-4 {
   background-color: rgb(25, 33, 46);
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-
   color: white;
 }
 
 #grid-item-5 {
   background-color: rgb(255, 255, 255);
-  margin-bottom: 20px;
-  padding-bottom: 20px;
 }
 
 @media (min-width: 576px) {
   .grid-container {
     display: flex;
+  }
+
+  #grid-item-5 {
+    flex-basis: 85%;
+    margin-left: 10px;
+  }
+
+  #top {
+    display: flex;
+    flex-basis: 50%;
+  }
+
+  #bottom {
+    display: flex;
+    flex-basis: 50%;
+  }
+
+  #main-left {
+    display: flex;
+    flex-direction: column;
+  }
+  #grid-item-1 {
+    flex-basis: 75%;
+    margin-left: 10px;
+  }
+
+  #grid-item-2 {
+    margin-left: 10px;
+    flex-basis: 25%;
+  }
+
+  #grid-item-3 {
+    margin-left: 10px;
+    flex-basis: 45%;
+  }
+
+  #grid-item-4 {
+    margin-left: 10px;
   }
 }
